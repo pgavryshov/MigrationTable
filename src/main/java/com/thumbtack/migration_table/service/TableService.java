@@ -2,8 +2,6 @@ package com.thumbtack.migration_table.service;
 
 import com.thumbtack.migration_table.model.MigrationTable;
 
-import java.util.ArrayList;
-
 public interface TableService {
 
     MigrationTable getTableByName(String name);
@@ -12,9 +10,7 @@ public interface TableService {
 
     boolean existTable(String name);
 
-    MigrationTable newTable(MigrationTable table);
-
-    ArrayList tableListAll();
+    MigrationTable newTable(String tableName);
 
     boolean existField(String tableName, String fieldName);
 
